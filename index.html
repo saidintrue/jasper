@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jasper.css">
+    <script src="js/jasper.js"></script>
+ <!--	<link rel="stylesheet" type="text/css" href="css/bootstrap-nav.css">
+	http://css3.bradshawenterprises.com/cfimg/-->
+		<title>Jasper</title>
+		
+		<script>     
+		 
+		$.getJSON('http://api.postcodes.io/postcodes/KT153NB', function(data) 
+		{
+        x = data["result"]["postcode"];
+    });
+
+
+	 </script>
+ </head>
+
+<body>
+<div id="mySidenav" name="sideNav" class="sidenav" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p>Drag me! <span class="glyphicon glyphicon-chevron-right"></span> </p>
+  <script>getImages();</script>
+</div>
+
+<div class="container-fluid">
+
+	<div class="row">
+	  <div class="col-sm-3"></div>
+	  <div class="col-sm-9">
+      <h2>Mister Jasper Digglesworth</h2>
+    <!--  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click to see my pictures!</span>-->
+      <p> Drag me back! <span class="glyphicon glyphicon-chevron-right"></p>
+      <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <h3 id="result">
+				<script>getJoke();</script>
+      </h3>
+
+	  </div>
+	</div>
+
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+  <a class="navbar-brand" href="#">Follow Me!</a>
+		<!--<a href="#" class="fa fa-facebook"></a>-->
+		<!--<a href="#" class="fa fa-twitter"></a>-->
+		<a href="https://www.instagram.com/misterdiggles/?hl=en" target="_blank" class="fa fa-instagram"></a>
+		<!--<a href="#" class="fa fa-snapchat-ghost"></a>-->
+</nav>
+
+
+</body>
+</html>
